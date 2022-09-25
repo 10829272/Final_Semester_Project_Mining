@@ -6,7 +6,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
-from .library.helpers import clean_text, openfile, text_cleaning
+from .library.helpers import clean_text, openfile
 
 app = FastAPI()
 
@@ -33,7 +33,7 @@ async def show_page(request: Request, page_name: str):
 @app.get("/form1", response_class=HTMLResponse)
 def flag_text(request: Request, query: Optional[str] = None):
     """
-    A simple function that receive a query and predicts the authenicity of the statement.
+    A function that receive a query and predicts the authenicity of the statement.
     :param review:
     :return: prediction
     """ 
