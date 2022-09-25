@@ -37,7 +37,7 @@ def flag_text(request: Request, query: Optional[str] = None):
     :param review:
     :return: prediction
     """ 
-    if len(query.split()) < 100:
+    if len(query.split()) < 30:
         data = openfile("home.md")
         return templates.TemplateResponse("page.html", context={"request":request, "data":data, "result": "Word length > 100.", "OriginalUserInput":query, "UserInput":""})
 
