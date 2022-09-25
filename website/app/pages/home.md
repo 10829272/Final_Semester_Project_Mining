@@ -1,6 +1,6 @@
 <h1>Welcome to the A Teams Final Semester Project.</h1>
 <p>Our project was to build a fake news detection system that predicted the authenticity of football transfer news.</p>
-<p>Type in a text...</p>
+<p>Text should be at least a 100 words...</p>
 
 
 <form class="d-flex form-group green-border-focus" action="/form1/">
