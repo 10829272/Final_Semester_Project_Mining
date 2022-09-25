@@ -37,9 +37,9 @@ def flag_text(request: Request, query: Optional[str] = None):
     :param review:
     :return: prediction
     """ 
-    if len(query) < 250:
+    if len(query.split()) < 100:
         data = openfile("home.md")
-        return templates.TemplateResponse("page.html", context={"request":request, "data":data, "result": "Text length is too small.(n>100)", "OriginalUserInput":query, "UserInput":""})
+        return templates.TemplateResponse("page.html", context={"request":request, "data":data, "result": "Word length > 100.", "OriginalUserInput":query, "UserInput":""})
 
     if query: 
         model = pickle.load(open("../Final_Semester_Project_Mining/saved_model.pkl", 'rb'))
