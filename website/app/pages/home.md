@@ -1,7 +1,6 @@
 <h1>Welcome to the A Teams Final Semester Project.</h1>
 <p>Our project was to build a fake news detection system that predicted the authenticity of football transfer news.</p>
-<p>Our Model was restricted to football transfer news.</p>
-<p>Type in a text and our model will predict the authenticity of your statement.</p>
+<p>Type in a text...</p>
 
 
 <form class="d-flex form-group green-border-focus" action="/form1/">
